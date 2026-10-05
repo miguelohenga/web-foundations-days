@@ -1,0 +1,7 @@
+# Reflection
+
+The most difficult concept in this course was **asynchronous JavaScript** — in particular, understanding that `fetch()` returns a *promise*, not the data itself. I kept writing code that treated `fetch` as if it returned the response immediately, and my variables would be `undefined` with no error thrown. Reading the code over and over didn't help. What did help was slowing down and using `console.log` at every step. When I saw `Promise {<pending>}` printed to the console instead of the data, it clicked: the function was returning a promise, and I needed to `await` it. From there, `async`/`await` with `try`/`catch`/`finally` made much more sense.
+
+If I could improve one part of my capstone, it would be the **error handling**. Right now, the API client shows a generic error message when something fails, but it doesn't distinguish between a 404 (not found), a 500 (server error), or a network failure. The feedback from my capstone presentation suggested I give users clearer messages and retry buttons for network issues. That's a small change but a big improvement in user experience.
+
+Next, I want to learn **React**. Vanilla JavaScript taught me the fundamentals, but every modern job posting mentions React or Vue. Once I'm comfortable with components and state, I'd like to rebuild the QuickNotes API client as a React app. After that, I want to learn TypeScript so my code is safer as it grows.
