@@ -1,0 +1,67 @@
+/* Light theme (default) */
+:root {
+    --bg: #f9f9f9;
+    --text: #333;
+    --card: #ffffff;
+    --border: #ccc;
+    --accent: #1a73e8;
+}
+
+/* Dark theme */
+body.dark {
+    --bg: #1a1a1a;
+    --text: #f0f0f0;
+    --card: #2a2a2a;
+    --border: #444;
+    --accent: #4a9eff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 8px 4px 0 0;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
